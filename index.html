@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>5thsview</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="view">
+                <canvas id="canvas" width="600" height="600"></canvas>
+            </div>
+            <div class="controls">
+                <fieldset>
+                    <legend>View</legend>
+                    <label>
+                        <input name="view" type="radio" value="circle" checked> Circle
+                    </label>
+                    <label>
+                        <input name="view" type="radio" value="spiral"> Spiral
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Scale</legend>
+                    <label>
+                        <input name="scale" type="radio" value="pythagorean" checked> Pythagorean scale
+                    </label>
+                    <br>
+                    <label>
+                        <input name="scale" type="radio" value="just"> Just scale
+                    </label>
+                    <br>
+                    <label>
+                        <input name="scale" type="radio" value="ET"> Equal temperament
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Draw</legend>
+                    <label>
+                        <input name="drawLines" type="checkbox" checked> Lines
+                    </label>
+                    <label>
+                        <input name="drawPoints" type="checkbox" checked> Points
+                    </label>
+                    <label>
+                        <input name="drawLabels" type="checkbox" checked> Labels
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Grid</legend>
+                    <label>
+                        <input name="majorGrid" type="checkbox" checked disabled> Major grid
+                    </label>
+                    <label>
+                        <input name="minorGrid" type="checkbox" checked disabled> Minor grid
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Note names</legend>
+                    <label>
+                        <input name="notes" type="radio" value="english" checked> English (C, C♯, D… B)
+                    </label>
+                    <br>
+                    <label>
+                        <input name="notes" type="radio" value="latin"> Latin (Do, Do♯, Re… Si)
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Interval names</legend>
+                    <label>
+                        <input name="intervals" type="radio" value="english" checked> English (P1, m1, M2… P8)
+                    </label>
+                    <br>
+                    <label>
+                        <input name="intervals" type="radio" value="latin"> Latin (1ª G, 2ª m, 2ª M… 8ª G)
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Label format</legend>
+                    <label>
+                        <input name="labelFormat" type="radio" value="note" checked> Note
+                    </label>
+                    <label>
+                        <input name="labelFormat" type="radio" value="semitones"> Semitones
+                    </label>
+                    <label>
+                        <input name="labelFormat" type="radio" value="interval"> Interval
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Advanced</legend>
+                    <label>
+                        <input name="displayOctave" type="checkbox"> Display octave number
+                    </label>
+                    <br>
+                    <label>
+                        <input name="displayPythagoreanComma" type="checkbox" disabled> Display pythagorean comma
+                    </label>
+                    <br>
+                    <label>
+                        <input name="displaySyntonicComma" type="checkbox" disabled> Display syntonic comma
+                    </label>
+                </fieldset>
+            </div>
+        </div>
+        <script type="module" src="assets/js/main.js"></script>
+    </body>
+</html>
